@@ -1,0 +1,148 @@
+.owner-dashboard .stat-icon {
+  background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%) !important;
+  color: #059669 !important;
+}
+
+/* Listings Table */
+.listings-table {
+  overflow-x: auto;
+}
+
+.listings-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.listings-table th,
+.listings-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.listings-table th {
+  background: #f9fafb;
+  font-weight: 600;
+  color: #374151;
+  font-size: 0.9rem;
+}
+
+.listings-table td {
+  color: #4b5563;
+}
+
+.listing-title a {
+  color: #1f2937;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.listing-title a:hover {
+  color: #4f46e5;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.status-badge.draft {
+  background: #f3f4f6;
+  color: #6b7280;
+}
+
+.status-badge.pending {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.status-badge.active {
+  background: #d1fae5;
+  color: #059669;
+}
+
+.status-badge.rented {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.status-badge.inactive {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.status-badge.suspended {
+  background: #fce7f3;
+  color: #db2777;
+}
+
+.table-action {
+  color: #4f46e5;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.table-action:hover {
+  text-decoration: underline;
+}
+
+/* Quick Actions */
+.quick-actions {
+  margin-top: 2rem;
+}
+
+.quick-actions h2 {
+  font-size: 1.25rem;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+}
+
+.actions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.action-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #4b5563;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s;
+  text-align: center;
+}
+
+.action-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  color: #059669;
+}
+
+.action-card svg {
+  font-size: 2rem;
+  color: #10b981;
+}
+
+.action-card span {
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .listings-table th:nth-child(3),
+  .listings-table td:nth-child(3),
+  .listings-table th:nth-child(5),
+  .listings-table td:nth-child(5) {
+    display: none;
+  }
+}
